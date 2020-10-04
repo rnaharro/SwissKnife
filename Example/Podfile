@@ -1,0 +1,7 @@
+use_frameworks!
+target 'SwissKnife_Tests' do
+  platform :ios, '14.0'
+  pod 'SwissKnife', :path => '../'
+  
+  
+end

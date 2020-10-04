@@ -1,0 +1,6 @@
+framework module Pods_SwissKnife_Tests {
+  umbrella header "Pods-SwissKnife_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

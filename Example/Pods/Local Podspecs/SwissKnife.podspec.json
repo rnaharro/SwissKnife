@@ -1,0 +1,23 @@
+{
+  "name": "SwissKnife",
+  "version": "0.1.0",
+  "summary": "Utilities and extensions for swift projects.",
+  "description": "Utilities and extensions for swift projects.",
+  "homepage": "https://github.com/rnaharro/SwissKnife",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ricardo N.": "rnaharro@icloud.com"
+  },
+  "source": {
+    "git": "https://github.com/rnaharro/SwissKnife.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/AppDelegate",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source_files": "Sources/**/*"
+}

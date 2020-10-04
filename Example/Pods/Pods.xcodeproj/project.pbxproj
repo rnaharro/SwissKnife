@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		077DCAAC54F4AC54D46FF85DB5A38816 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEEA5A088F6DC4B00F5660428030630 /* UIColor+Extensions.swift */; };
+		181B787808E605F38C64E6D987A47467 /* String+Clean.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A7AEC856788E552952AA3A148F87A /* String+Clean.swift */; };
+		23F24619CED66C93BA0E61F56921801F /* String+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767828DF737AF638623EA16EC2021ECE /* String+Validations.swift */; };
+		2A1788A554D6579DB0E3042C63238EAF /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52DBCAF802DE1707693A01AB04525D /* Dictionary+Extensions.swift */; };
+		4FF72DB4EA201F273D6899776FA11BC5 /* Pods-SwissKnife_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4946EFAA35203C0AD293C3CB3240A264 /* Pods-SwissKnife_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		551704306F3C5019659EE6861EE48FE0 /* UIView+NibLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFF800E51EDB7EE692F2756D362EE1A /* UIView+NibLoading.swift */; };
+		5DAFD08487F12783C36EB4E75B11B6FA /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333164019A1FC61A27A91138F6878034 /* Bundle+Extensions.swift */; };
+		5E2CE5A5BE8164BD469261119C719539 /* SwissKnife-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA0FF2A6226A82AEEEB450B63DFA519 /* SwissKnife-dummy.m */; };
+		6A7005D4988DD956E03258EF91B5CB90 /* NSData+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4701CD533E4ED01EE83B0AEE45F4462 /* NSData+Extensions.swift */; };
+		72537227F33DFE585FAF022905CCD201 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		772A36F0D4032DAFA6847E7A552EC786 /* SwissKnife-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DB605760683590BD85F555A73ABA40E /* SwissKnife-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77D66E34BEEE864C817223CFE17757F2 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E2A6E274E125745C6BE5802E9F8F50 /* UITableViewCell+Extensions.swift */; };
+		7954799E6D7AE8765D03F26AC450A3DD /* UIProgressView+Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9534C73DC6F413497DACFC412A561F0E /* UIProgressView+Height.swift */; };
+		837F33C712C7913A06C9BE29412337C8 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B9B932C147373364D5F7F22956DE57 /* UIImage+Extensions.swift */; };
+		853F8567C95D7B7CA4191FDA49F43B60 /* NSNull+DefaultValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87129CACB5BCFE6A275F1CEDDAC813A /* NSNull+DefaultValues.swift */; };
+		8AB844CD15A1A29CB994C92740BD8E5F /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3879DF83E82487FD131E1B947609CEB4 /* FileManager+Extensions.swift */; };
+		8C9FF949A06EC45E720249776F331F2A /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B96656DE7B41093041654D089EC7FD /* Array+Extensions.swift */; };
+		9A1A1C12A21727689059F1FB97472F6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		B0BFB1BA0D58434DF05A4321DA50FC01 /* String+Base64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0C293B1678021A658584DB4175CF1 /* String+Base64.swift */; };
+		BA6F6FE0820460C4A43444C0CC54AB70 /* String+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D9AAED7D07729AE1E8E108868F121A /* String+Bundle.swift */; };
+		BE93B3000D832A51B39A7232B3E5D304 /* Pods-SwissKnife_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 831FD9A301ED1E074B37B81C2FC1F122 /* Pods-SwissKnife_Tests-dummy.m */; };
+		CEE73E4731D45129709A82E668FB203F /* String+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906CF912A9F7953ED407ADD3A0D5B04C /* String+Subscript.swift */; };
+		D71F913DF24D72A210F90739B2A13C71 /* Bool+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DC01E86E6CC968DCE781362D161F54 /* Bool+Extensions.swift */; };
+		DE9361CE8F72ED76DFCE44F5EA22FC95 /* CGSize+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59DE0FA436D60FD7AA4660290076F212 /* CGSize+Extensions.swift */; };
+		E7CB953D80B94B6FEA44E6A83DA8947C /* NSNumber+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A709DBC4117C17D35B49ACE721703003 /* NSNumber+Extensions.swift */; };
+		E8133BE6E22A4610B8A8B295922A1EB6 /* UIScreen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A88AB3C385C4F6B881017BB527F2FC /* UIScreen+Extensions.swift */; };
+		EE6D6BA48D1BF3F2DD171617F9E371B7 /* NSString+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7370464EAC3FD8C11DEEEB7B450F0F22 /* NSString+Bundle.swift */; };
+		EF10872BC16453C769446400837A0AC1 /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD870191EC22317696CCB1C73329E3 /* UIViewController+Utilities.swift */; };
+		FBAA16BBC287721F47F7F8F301DF3008 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1975ECBFA77186582596A4695CB03362 /* URL+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB279B88412E5CC4BBEF107C8D49329E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 157F1FA31D75D7FA43AE1972DB6D3D23;
+			remoteInfo = SwissKnife;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06A46F91838CE1EAD27F1B8E148F3F9F /* Pods-SwissKnife_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwissKnife_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		15C0C293B1678021A658584DB4175CF1 /* String+Base64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Base64.swift"; sourceTree = "<group>"; };
+		15D9AAED7D07729AE1E8E108868F121A /* String+Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Bundle.swift"; sourceTree = "<group>"; };
+		1975ECBFA77186582596A4695CB03362 /* URL+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		1B4AD26FA4F5BCBE4AF3828E52AFD228 /* SwissKnife-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwissKnife-Info.plist"; sourceTree = "<group>"; };
+		1C52DBCAF802DE1707693A01AB04525D /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		22ADC4FF4E95D3BF7227E6C1A0D18421 /* SwissKnife-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwissKnife-prefix.pch"; sourceTree = "<group>"; };
+		25A88AB3C385C4F6B881017BB527F2FC /* UIScreen+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extensions.swift"; sourceTree = "<group>"; };
+		2CA4DF36B70E0644D7D9BBE5F1FA607C /* SwissKnife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwissKnife.framework; path = SwissKnife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		333164019A1FC61A27A91138F6878034 /* Bundle+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		3879DF83E82487FD131E1B947609CEB4 /* FileManager+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
+		4402A43AA9418A21981CD72BCC52B329 /* SwissKnife.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwissKnife.modulemap; sourceTree = "<group>"; };
+		4946EFAA35203C0AD293C3CB3240A264 /* Pods-SwissKnife_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwissKnife_Tests-umbrella.h"; sourceTree = "<group>"; };
+		55D6B0AFF6647D6D82A12641C5D233A7 /* Pods-SwissKnife_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwissKnife_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		59DE0FA436D60FD7AA4660290076F212 /* CGSize+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGSize+Extensions.swift"; sourceTree = "<group>"; };
+		5A6AEE2575433AF850027A8549ACA188 /* Pods-SwissKnife_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwissKnife_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5FA0FF2A6226A82AEEEB450B63DFA519 /* SwissKnife-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwissKnife-dummy.m"; sourceTree = "<group>"; };
+		6E0DD5849E23A1DC5133FFBEEE153016 /* Pods-SwissKnife_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwissKnife_Tests-Info.plist"; sourceTree = "<group>"; };
+		6EE57F6697542764A8D52CF6662DEDEC /* SwissKnife.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SwissKnife.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7370464EAC3FD8C11DEEEB7B450F0F22 /* NSString+Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSString+Bundle.swift"; sourceTree = "<group>"; };
+		767828DF737AF638623EA16EC2021ECE /* String+Validations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Validations.swift"; sourceTree = "<group>"; };
+		7D0DCA46EA8EA2F21B656D1F966B3611 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7DB605760683590BD85F555A73ABA40E /* SwissKnife-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwissKnife-umbrella.h"; sourceTree = "<group>"; };
+		82B9B932C147373364D5F7F22956DE57 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		831FD9A301ED1E074B37B81C2FC1F122 /* Pods-SwissKnife_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwissKnife_Tests-dummy.m"; sourceTree = "<group>"; };
+		8DBD870191EC22317696CCB1C73329E3 /* UIViewController+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utilities.swift"; sourceTree = "<group>"; };
+		906CF912A9F7953ED407ADD3A0D5B04C /* String+Subscript.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Subscript.swift"; sourceTree = "<group>"; };
+		9534C73DC6F413497DACFC412A561F0E /* UIProgressView+Height.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Height.swift"; sourceTree = "<group>"; };
+		95A63962F542B648807BAB0C6450F532 /* Pods-SwissKnife_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SwissKnife_Tests.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4701CD533E4ED01EE83B0AEE45F4462 /* NSData+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSData+Extensions.swift"; sourceTree = "<group>"; };
+		A68E6FD425E026959231ED2A7BC3DFFF /* SwissKnife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwissKnife.debug.xcconfig; sourceTree = "<group>"; };
+		A709DBC4117C17D35B49ACE721703003 /* NSNumber+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSNumber+Extensions.swift"; sourceTree = "<group>"; };
+		A73D3BDC347378A7524A090B816E7D01 /* Pods_SwissKnife_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwissKnife_Tests.framework; path = "Pods-SwissKnife_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E2A6E274E125745C6BE5802E9F8F50 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		A87129CACB5BCFE6A275F1CEDDAC813A /* NSNull+DefaultValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSNull+DefaultValues.swift"; sourceTree = "<group>"; };
+		B5B96656DE7B41093041654D089EC7FD /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		BA0A7AEC856788E552952AA3A148F87A /* String+Clean.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+Clean.swift"; sourceTree = "<group>"; };
+		BCFF800E51EDB7EE692F2756D362EE1A /* UIView+NibLoading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoading.swift"; sourceTree = "<group>"; };
+		BEEEA5A088F6DC4B00F5660428030630 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		C75F1EFB5C8FFA6CFA2475467DFBAB6C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E20CDE13BD5D5662F84D9D8B63776205 /* Pods-SwissKnife_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwissKnife_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5DC01E86E6CC968DCE781362D161F54 /* Bool+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bool+Extensions.swift"; sourceTree = "<group>"; };
+		E730591BFB54EFFD01C6E2856FC6BFB8 /* SwissKnife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwissKnife.release.xcconfig; sourceTree = "<group>"; };
+		EC43FBEC1B4444442B101355FB3AE016 /* Pods-SwissKnife_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwissKnife_Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16322F21BD3DF4C1FB4687815985A91E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72537227F33DFE585FAF022905CCD201 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3625B2560861A31644F607C9F7728E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1A1C12A21727689059F1FB97472F6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0435AA2D3A96049FD288C047BDD4475A /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A7E2A6E274E125745C6BE5802E9F8F50 /* UITableViewCell+Extensions.swift */,
+			);
+			name = TableViewCell;
+			path = Sources/TableViewCell;
+			sourceTree = "<group>";
+		};
+		09D52882BA54626B1C5F1FFB2BE07C6B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				25A88AB3C385C4F6B881017BB527F2FC /* UIScreen+Extensions.swift */,
+			);
+			name = Screen;
+			path = Sources/Screen;
+			sourceTree = "<group>";
+		};
+		0FDE18B0A35A68C3AD10335A5A450920 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				1975ECBFA77186582596A4695CB03362 /* URL+Extensions.swift */,
+			);
+			name = URL;
+			path = Sources/URL;
+			sourceTree = "<group>";
+		};
+		16ABE7CF9C7256D08E154D6F12A58A15 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				1C52DBCAF802DE1707693A01AB04525D /* Dictionary+Extensions.swift */,
+			);
+			name = Dictionary;
+			path = Sources/Dictionary;
+			sourceTree = "<group>";
+		};
+		195C67DF8A2493F2229F1A3EF923A4C6 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				82B9B932C147373364D5F7F22956DE57 /* UIImage+Extensions.swift */,
+			);
+			name = Image;
+			path = Sources/Image;
+			sourceTree = "<group>";
+		};
+		2724AD389D8AC491E1B109FEB36A9A29 /* CGSize */ = {
+			isa = PBXGroup;
+			children = (
+				59DE0FA436D60FD7AA4660290076F212 /* CGSize+Extensions.swift */,
+			);
+			name = CGSize;
+			path = Sources/CGSize;
+			sourceTree = "<group>";
+		};
+		2F249A07F8C03584767C3AD3F9AC0817 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8DBD870191EC22317696CCB1C73329E3 /* UIViewController+Utilities.swift */,
+			);
+			name = ViewController;
+			path = Sources/ViewController;
+			sourceTree = "<group>";
+		};
+		42B3C1C20BDD2CDADF4125D3438B934A /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				9534C73DC6F413497DACFC412A561F0E /* UIProgressView+Height.swift */,
+			);
+			name = ProgressView;
+			path = Sources/ProgressView;
+			sourceTree = "<group>";
+		};
+		4A107EEA8C40E9C2A43D777586CED0F9 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				7370464EAC3FD8C11DEEEB7B450F0F22 /* NSString+Bundle.swift */,
+				15C0C293B1678021A658584DB4175CF1 /* String+Base64.swift */,
+				15D9AAED7D07729AE1E8E108868F121A /* String+Bundle.swift */,
+				BA0A7AEC856788E552952AA3A148F87A /* String+Clean.swift */,
+				906CF912A9F7953ED407ADD3A0D5B04C /* String+Subscript.swift */,
+				767828DF737AF638623EA16EC2021ECE /* String+Validations.swift */,
+			);
+			name = String;
+			path = Sources/String;
+			sourceTree = "<group>";
+		};
+		592191227E2DA280949A6DFA0FEC0D7F /* Bool */ = {
+			isa = PBXGroup;
+			children = (
+				E5DC01E86E6CC968DCE781362D161F54 /* Bool+Extensions.swift */,
+			);
+			name = Bool;
+			path = Sources/Bool;
+			sourceTree = "<group>";
+		};
+		5FBABD6156EDA4B4353CE169BAD2FFEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A73D3BDC347378A7524A090B816E7D01 /* Pods_SwissKnife_Tests.framework */,
+				2CA4DF36B70E0644D7D9BBE5F1FA607C /* SwissKnife.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63932F1CA15143D71EF5071BD9FD1C60 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				333164019A1FC61A27A91138F6878034 /* Bundle+Extensions.swift */,
+			);
+			name = Bundle;
+			path = Sources/Bundle;
+			sourceTree = "<group>";
+		};
+		69C226BCB68806A7F635122441A3D124 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				B5B96656DE7B41093041654D089EC7FD /* Array+Extensions.swift */,
+			);
+			name = Array;
+			path = Sources/Array;
+			sourceTree = "<group>";
+		};
+		78FC67ED1A949A2B7A8D174403E610D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCFF800E51EDB7EE692F2756D362EE1A /* UIView+NibLoading.swift */,
+			);
+			name = View;
+			path = Sources/View;
+			sourceTree = "<group>";
+		};
+		7BC4AEBAC60022BD3001DF49AEA07FE2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7D0DCA46EA8EA2F21B656D1F966B3611 /* LICENSE */,
+				C75F1EFB5C8FFA6CFA2475467DFBAB6C /* README.md */,
+				6EE57F6697542764A8D52CF6662DEDEC /* SwissKnife.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		8FA318DF0AD6DC937FE24A8C67D82F88 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				3879DF83E82487FD131E1B947609CEB4 /* FileManager+Extensions.swift */,
+			);
+			name = FileManager;
+			path = Sources/FileManager;
+			sourceTree = "<group>";
+		};
+		93EBE1251EF35BEE4B00EB7615238D23 /* NSNull */ = {
+			isa = PBXGroup;
+			children = (
+				A87129CACB5BCFE6A275F1CEDDAC813A /* NSNull+DefaultValues.swift */,
+			);
+			name = NSNull;
+			path = Sources/NSNull;
+			sourceTree = "<group>";
+		};
+		9D29134D68C1B5BD59823063752B40E8 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				BEEEA5A088F6DC4B00F5660428030630 /* UIColor+Extensions.swift */,
+			);
+			name = Color;
+			path = Sources/Color;
+			sourceTree = "<group>";
+		};
+		A44823237C8130BBFE7C3DCE7E63744A /* SwissKnife */ = {
+			isa = PBXGroup;
+			children = (
+				69C226BCB68806A7F635122441A3D124 /* Array */,
+				592191227E2DA280949A6DFA0FEC0D7F /* Bool */,
+				63932F1CA15143D71EF5071BD9FD1C60 /* Bundle */,
+				2724AD389D8AC491E1B109FEB36A9A29 /* CGSize */,
+				9D29134D68C1B5BD59823063752B40E8 /* Color */,
+				F8B6935D54878DF935AB819DDF17D441 /* Data */,
+				16ABE7CF9C7256D08E154D6F12A58A15 /* Dictionary */,
+				8FA318DF0AD6DC937FE24A8C67D82F88 /* FileManager */,
+				195C67DF8A2493F2229F1A3EF923A4C6 /* Image */,
+				93EBE1251EF35BEE4B00EB7615238D23 /* NSNull */,
+				AB7781B4E0C3D7F8A9E78590790C747B /* NSNumber */,
+				7BC4AEBAC60022BD3001DF49AEA07FE2 /* Pod */,
+				42B3C1C20BDD2CDADF4125D3438B934A /* ProgressView */,
+				09D52882BA54626B1C5F1FFB2BE07C6B /* Screen */,
+				4A107EEA8C40E9C2A43D777586CED0F9 /* String */,
+				AE938E82AC4DA78D0A2F4D1DB4A277EF /* Support Files */,
+				0435AA2D3A96049FD288C047BDD4475A /* TableViewCell */,
+				0FDE18B0A35A68C3AD10335A5A450920 /* URL */,
+				78FC67ED1A949A2B7A8D174403E610D4 /* View */,
+				2F249A07F8C03584767C3AD3F9AC0817 /* ViewController */,
+			);
+			name = SwissKnife;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		AB7781B4E0C3D7F8A9E78590790C747B /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				A709DBC4117C17D35B49ACE721703003 /* NSNumber+Extensions.swift */,
+			);
+			name = NSNumber;
+			path = Sources/NSNumber;
+			sourceTree = "<group>";
+		};
+		AE938E82AC4DA78D0A2F4D1DB4A277EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4402A43AA9418A21981CD72BCC52B329 /* SwissKnife.modulemap */,
+				5FA0FF2A6226A82AEEEB450B63DFA519 /* SwissKnife-dummy.m */,
+				1B4AD26FA4F5BCBE4AF3828E52AFD228 /* SwissKnife-Info.plist */,
+				22ADC4FF4E95D3BF7227E6C1A0D18421 /* SwissKnife-prefix.pch */,
+				7DB605760683590BD85F555A73ABA40E /* SwissKnife-umbrella.h */,
+				A68E6FD425E026959231ED2A7BC3DFFF /* SwissKnife.debug.xcconfig */,
+				E730591BFB54EFFD01C6E2856FC6BFB8 /* SwissKnife.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwissKnife";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				DE9AAA013DCE75FADDDE16FAF8812D17 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				5FBABD6156EDA4B4353CE169BAD2FFEE /* Products */,
+				D73FF02DE0E513311104A6C3D4B4762A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D73FF02DE0E513311104A6C3D4B4762A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E72F0A38EFA8667438F590C2662FBD0D /* Pods-SwissKnife_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DE9AAA013DCE75FADDDE16FAF8812D17 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A44823237C8130BBFE7C3DCE7E63744A /* SwissKnife */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		E72F0A38EFA8667438F590C2662FBD0D /* Pods-SwissKnife_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				95A63962F542B648807BAB0C6450F532 /* Pods-SwissKnife_Tests.modulemap */,
+				55D6B0AFF6647D6D82A12641C5D233A7 /* Pods-SwissKnife_Tests-acknowledgements.markdown */,
+				5A6AEE2575433AF850027A8549ACA188 /* Pods-SwissKnife_Tests-acknowledgements.plist */,
+				831FD9A301ED1E074B37B81C2FC1F122 /* Pods-SwissKnife_Tests-dummy.m */,
+				06A46F91838CE1EAD27F1B8E148F3F9F /* Pods-SwissKnife_Tests-frameworks.sh */,
+				6E0DD5849E23A1DC5133FFBEEE153016 /* Pods-SwissKnife_Tests-Info.plist */,
+				4946EFAA35203C0AD293C3CB3240A264 /* Pods-SwissKnife_Tests-umbrella.h */,
+				E20CDE13BD5D5662F84D9D8B63776205 /* Pods-SwissKnife_Tests.debug.xcconfig */,
+				EC43FBEC1B4444442B101355FB3AE016 /* Pods-SwissKnife_Tests.release.xcconfig */,
+			);
+			name = "Pods-SwissKnife_Tests";
+			path = "Target Support Files/Pods-SwissKnife_Tests";
+			sourceTree = "<group>";
+		};
+		F8B6935D54878DF935AB819DDF17D441 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A4701CD533E4ED01EE83B0AEE45F4462 /* NSData+Extensions.swift */,
+			);
+			name = Data;
+			path = Sources/Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4102DD00948CD3FEAD97DC2C1F61D07E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF72DB4EA201F273D6899776FA11BC5 /* Pods-SwissKnife_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B059A1508F7CF7FA251CE2ED53049B80 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				772A36F0D4032DAFA6847E7A552EC786 /* SwissKnife-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		157F1FA31D75D7FA43AE1972DB6D3D23 /* SwissKnife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73A6C9803069576AE3982B7C76490755 /* Build configuration list for PBXNativeTarget "SwissKnife" */;
+			buildPhases = (
+				B059A1508F7CF7FA251CE2ED53049B80 /* Headers */,
+				8135B42B577BA0A0C45A199C6D9231BD /* Sources */,
+				A3625B2560861A31644F607C9F7728E8 /* Frameworks */,
+				BB4F98236B922BAE47BFA16DBB80F550 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwissKnife;
+			productName = SwissKnife;
+			productReference = 2CA4DF36B70E0644D7D9BBE5F1FA607C /* SwissKnife.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33B0E22136CF1D234FD5F8C6169AB005 /* Pods-SwissKnife_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91BF3015AB7F315AA142BF9BB3B14ABA /* Build configuration list for PBXNativeTarget "Pods-SwissKnife_Tests" */;
+			buildPhases = (
+				4102DD00948CD3FEAD97DC2C1F61D07E /* Headers */,
+				281647CFEA4191E7AD94B82FB5541358 /* Sources */,
+				16322F21BD3DF4C1FB4687815985A91E /* Frameworks */,
+				C9DED9CE9DD252CC2F2DD4043147D3D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81685068188234565A8EA9A08B339585 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwissKnife_Tests";
+			productName = "Pods-SwissKnife_Tests";
+			productReference = A73D3BDC347378A7524A090B816E7D01 /* Pods_SwissKnife_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 5FBABD6156EDA4B4353CE169BAD2FFEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33B0E22136CF1D234FD5F8C6169AB005 /* Pods-SwissKnife_Tests */,
+				157F1FA31D75D7FA43AE1972DB6D3D23 /* SwissKnife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB4F98236B922BAE47BFA16DBB80F550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9DED9CE9DD252CC2F2DD4043147D3D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		281647CFEA4191E7AD94B82FB5541358 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE93B3000D832A51B39A7232B3E5D304 /* Pods-SwissKnife_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8135B42B577BA0A0C45A199C6D9231BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C9FF949A06EC45E720249776F331F2A /* Array+Extensions.swift in Sources */,
+				D71F913DF24D72A210F90739B2A13C71 /* Bool+Extensions.swift in Sources */,
+				5DAFD08487F12783C36EB4E75B11B6FA /* Bundle+Extensions.swift in Sources */,
+				DE9361CE8F72ED76DFCE44F5EA22FC95 /* CGSize+Extensions.swift in Sources */,
+				2A1788A554D6579DB0E3042C63238EAF /* Dictionary+Extensions.swift in Sources */,
+				8AB844CD15A1A29CB994C92740BD8E5F /* FileManager+Extensions.swift in Sources */,
+				6A7005D4988DD956E03258EF91B5CB90 /* NSData+Extensions.swift in Sources */,
+				853F8567C95D7B7CA4191FDA49F43B60 /* NSNull+DefaultValues.swift in Sources */,
+				E7CB953D80B94B6FEA44E6A83DA8947C /* NSNumber+Extensions.swift in Sources */,
+				EE6D6BA48D1BF3F2DD171617F9E371B7 /* NSString+Bundle.swift in Sources */,
+				B0BFB1BA0D58434DF05A4321DA50FC01 /* String+Base64.swift in Sources */,
+				BA6F6FE0820460C4A43444C0CC54AB70 /* String+Bundle.swift in Sources */,
+				181B787808E605F38C64E6D987A47467 /* String+Clean.swift in Sources */,
+				CEE73E4731D45129709A82E668FB203F /* String+Subscript.swift in Sources */,
+				23F24619CED66C93BA0E61F56921801F /* String+Validations.swift in Sources */,
+				5E2CE5A5BE8164BD469261119C719539 /* SwissKnife-dummy.m in Sources */,
+				077DCAAC54F4AC54D46FF85DB5A38816 /* UIColor+Extensions.swift in Sources */,
+				837F33C712C7913A06C9BE29412337C8 /* UIImage+Extensions.swift in Sources */,
+				7954799E6D7AE8765D03F26AC450A3DD /* UIProgressView+Height.swift in Sources */,
+				E8133BE6E22A4610B8A8B295922A1EB6 /* UIScreen+Extensions.swift in Sources */,
+				77D66E34BEEE864C817223CFE17757F2 /* UITableViewCell+Extensions.swift in Sources */,
+				551704306F3C5019659EE6861EE48FE0 /* UIView+NibLoading.swift in Sources */,
+				EF10872BC16453C769446400837A0AC1 /* UIViewController+Utilities.swift in Sources */,
+				FBAA16BBC287721F47F7F8F301DF3008 /* URL+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81685068188234565A8EA9A08B339585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwissKnife;
+			target = 157F1FA31D75D7FA43AE1972DB6D3D23 /* SwissKnife */;
+			targetProxy = BB279B88412E5CC4BBEF107C8D49329E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1AEF86B8D97EE7C01EF5D35FC45FE00F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68E6FD425E026959231ED2A7BC3DFFF /* SwissKnife.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwissKnife/SwissKnife-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwissKnife/SwissKnife-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwissKnife/SwissKnife.modulemap";
+				PRODUCT_MODULE_NAME = SwissKnife;
+				PRODUCT_NAME = SwissKnife;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		AF1F8D2941B0228930706FA0F2C9BB78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C6E7F8EE51990FB4B06AE7D3CE98FAF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E730591BFB54EFFD01C6E2856FC6BFB8 /* SwissKnife.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwissKnife/SwissKnife-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwissKnife/SwissKnife-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwissKnife/SwissKnife.modulemap";
+				PRODUCT_MODULE_NAME = SwissKnife;
+				PRODUCT_NAME = SwissKnife;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9BC846110EC493D8D341ECE769436E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC43FBEC1B4444442B101355FB3AE016 /* Pods-SwissKnife_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwissKnife_Tests/Pods-SwissKnife_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwissKnife_Tests/Pods-SwissKnife_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB4EDADABFCC5502A3019ACD170C0F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E20CDE13BD5D5662F84D9D8B63776205 /* Pods-SwissKnife_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwissKnife_Tests/Pods-SwissKnife_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwissKnife_Tests/Pods-SwissKnife_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3650F6C8AC2EFFA814EA61C37468B1 /* Debug */,
+				AF1F8D2941B0228930706FA0F2C9BB78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73A6C9803069576AE3982B7C76490755 /* Build configuration list for PBXNativeTarget "SwissKnife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEF86B8D97EE7C01EF5D35FC45FE00F /* Debug */,
+				C6E7F8EE51990FB4B06AE7D3CE98FAF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91BF3015AB7F315AA142BF9BB3B14ABA /* Build configuration list for PBXNativeTarget "Pods-SwissKnife_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4EDADABFCC5502A3019ACD170C0F9C /* Debug */,
+				D9BC846110EC493D8D341ECE769436E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

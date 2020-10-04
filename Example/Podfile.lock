@@ -1,0 +1,16 @@
+PODS:
+  - SwissKnife (0.1.0)
+
+DEPENDENCIES:
+  - SwissKnife (from `../`)
+
+EXTERNAL SOURCES:
+  SwissKnife:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwissKnife: 3cf80e1adc11ee8bced8dbf540931c56526420de
+
+PODFILE CHECKSUM: a2bc1b96bc0119851812fa894a8012c7e46a4550
+
+COCOAPODS: 1.9.3

@@ -1,0 +1,6 @@
+framework module SwissKnife {
+  umbrella header "SwissKnife-umbrella.h"
+
+  export *
+  module * { export * }
+}
