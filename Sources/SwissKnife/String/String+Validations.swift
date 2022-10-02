@@ -1,6 +1,6 @@
 import Foundation
 
-public extension String {
+extension String {
     
     // MARK: - Public Functions
     // MARK:   Validations

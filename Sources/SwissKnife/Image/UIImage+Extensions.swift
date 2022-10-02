@@ -1,8 +1,8 @@
 import UIKit
 
 //MARK: - Crop
-public extension UIImage {
-    @objc func crop(_ frame: CGRect) -> UIImage? {
+extension UIImage {
+    func crop(_ frame: CGRect) -> UIImage? {
         let imageCGI = self.cgImage!.cropping(to: frame)
         let image = UIImage(cgImage: imageCGI!, scale: UIScreen.main.scale, orientation: self.imageOrientation)
         
@@ -11,8 +11,8 @@ public extension UIImage {
 }
 
 // MARK: - Scale
-public extension UIImage {
-    @objc func scale(_ size: CGSize) -> UIImage? {
+extension UIImage {
+    func scale(_ size: CGSize) -> UIImage? {
         let scale = UIScreen.main.scale
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         self.draw(in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
@@ -22,7 +22,7 @@ public extension UIImage {
         return image
     }
     
-    @objc func scaleProportional(_ size: CGSize) -> UIImage? {
+    func scaleProportional(_ size: CGSize) -> UIImage? {
         var newSize:CGSize
         if self.size.width > self.size.height {
             newSize = CGSize(width: ceil(self.size.width / self.size.height) * size.height, height: size.height);
@@ -33,13 +33,13 @@ public extension UIImage {
         return self.scale(newSize)
     }
     
-    @objc func scaleProportionalToHeight(_ size: CGSize) -> UIImage? {
+    func scaleProportionalToHeight(_ size: CGSize) -> UIImage? {
         let newSize = CGSize(width: ceil(self.size.width / self.size.height) * size.height, height: size.height);
         
         return self.scale(newSize)
     }
     
-    @objc func drawAtBottomLeftInNewImage(_ size: CGSize) -> UIImage? {
+    func drawAtBottomLeftInNewImage(_ size: CGSize) -> UIImage? {
         let scale = UIScreen.main.scale
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         self.draw(in: CGRect(x: 5, y: size.height - self.size.height, width: self.size.width, height: self.size.height))
@@ -49,7 +49,7 @@ public extension UIImage {
         return image
     }
     
-    @objc func drawCenterInNewImage(_ size: CGSize) -> UIImage? {
+    func drawCenterInNewImage(_ size: CGSize) -> UIImage? {
         let scale = UIScreen.main.scale
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         self.draw(in: CGRect(x: (size.width - self.size.width) / 2, y: (size.height - self.size.height) / 2, width: self.size.width, height: self.size.height))
@@ -60,18 +60,49 @@ public extension UIImage {
     }
 }
 
+extension UIImage {
+    var squared: UIImage? {
+        let originalWidth  = size.width
+        let originalHeight = size.height
+        var x: CGFloat = 0.0
+        var y: CGFloat = 0.0
+        var edge: CGFloat = 0.0
+
+        if (originalWidth > originalHeight) {
+            // landscape
+            edge = originalHeight
+            x = (originalWidth - edge) / 2.0
+            y = 0.0
+
+        } else if (originalHeight > originalWidth) {
+            // portrait
+            edge = originalWidth
+            x = 0.0
+            y = (originalHeight - originalWidth) / 2.0
+        } else {
+            // square
+            edge = originalWidth
+        }
+
+        let cropSquare = CGRect(x: x, y: y, width: edge, height: edge)
+        guard let imageRef = cgImage?.cropping(to: cropSquare) else { return nil }
+
+        return UIImage(cgImage: imageRef, scale: scale, orientation: imageOrientation)
+    }
+}
+
 //MARK: - Effects
-public extension UIImage {
+extension UIImage {
     
 }
 
 //MARK: - UIColor
-public extension UIImage {
-    @objc convenience init(color: UIColor) {
+extension UIImage {
+    convenience init(color: UIColor) {
         self.init(color: color, size: CGSize(width: 1, height: 1))
     }
     
-    @objc convenience init(color: UIColor, size: CGSize) {
+    convenience init(color: UIColor, size: CGSize) {
         var rect = CGRect.zero
         rect.size = size
         
@@ -86,7 +117,7 @@ public extension UIImage {
         self.init(cgImage: (image?.cgImage)!)
     }
     
-    @objc func changeImage(_ color: UIColor) -> UIImage? {
+    func changeImage(_ color: UIColor) -> UIImage? {
         var rect = CGRect.zero
         rect.size = self.size
         
@@ -105,7 +136,7 @@ public extension UIImage {
         return image
     }
     
-    @objc func color() -> UIColor {
+    func color() -> UIColor {
         let position = CGPoint(x: 0, y: 0)
         
         let pixelData = self.cgImage!.dataProvider!.data
@@ -121,7 +152,7 @@ public extension UIImage {
         return UIColor(red: r, green: g, blue: b, alpha: a)
     }
     
-    @objc static func gradientImage(firstColor first:UIColor, secondColor second:UIColor) -> UIImage {
+    static func gradientImage(firstColor first:UIColor, secondColor second:UIColor) -> UIImage {
         let layer = CAGradientLayer()
         layer.frame = CGRect(x: 0, y: 0, width: UIScreen.main.nativeBounds.width, height: 4)
         layer.colors = [first.cgColor, first.cgColor, second.cgColor, second.cgColor]
@@ -141,9 +172,8 @@ public extension UIImage {
     }
 }
 
-public extension UIImage {
-    
-    @objc func maskWithColor(_ color: UIColor) -> UIImage? {
+extension UIImage {
+    func maskWithColor(_ color: UIColor) -> UIImage? {
         let maskImage = cgImage!
         
         let width = size.width
@@ -167,7 +197,7 @@ public extension UIImage {
         }
     }
     
-    @objc func multiply(_ color:UIColor) -> UIImage? {
+    func multiply(_ color:UIColor) -> UIImage? {
         let rect = CGRect(origin: .zero, size: self.size)
         
         //image colored
@@ -192,12 +222,12 @@ public extension UIImage {
 }
 
 //MARK: - UIViewRendering
-public extension UIImage {
-    @objc convenience init(view: UIView) {
+extension UIImage {
+    convenience init(view: UIView) {
         self.init(fromLayer: view.layer)
     }
     
-    @objc convenience init(fromLayer layer: CALayer) {
+    convenience init(fromLayer layer: CALayer) {
         UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, UIScreen.main.scale)
         if let context = UIGraphicsGetCurrentContext() {
             layer.render(in: context)
@@ -208,9 +238,9 @@ public extension UIImage {
     }
 }
 
-//MARK: - NSBundle
-public extension UIImage {
-    @objc static func assetImage(name: String, bundle: Bundle) -> UIImage? {
+//MARK: - Bundle
+extension UIImage {
+    static func assetImage(name: String, bundle: Bundle) -> UIImage? {
         
         // Intentamos cargar la imagen desde el bundle incluido
         let bundlePath = bundle.bundlePath

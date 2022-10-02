@@ -4,7 +4,7 @@ import UIKit
 public protocol UITableViewCellLoading {}
 extension UITableViewCell : UITableViewCellLoading {}
 
-public extension UITableViewCellLoading where Self : UITableViewCell {
+extension UITableViewCellLoading where Self : UITableViewCell {
     
     /// Load View from XIB
     ///

@@ -1,7 +1,7 @@
 import UIKit
 
-public extension UIViewController {
-    @objc static func topViewController() -> UIViewController? {
+extension UIViewController {
+    static func topViewController() -> UIViewController? {
         return self.topViewControllerWithRootViewController(Application.shared.keyWindow?.rootViewController)
     }
 

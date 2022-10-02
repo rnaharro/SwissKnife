@@ -1,6 +1,6 @@
 import UIKit
 
-public extension UIProgressView {
+extension UIProgressView {
 
     @IBInspectable var barHeight : CGFloat {
         get {

@@ -1,12 +1,12 @@
 import Foundation
 
-public extension URL {
+extension URL {
     
-    func appending(_ queryItem: String, value: String?) -> URL {
+    func appending(_ queryItem: String, value: String?) -> URL? {
         return appending([queryItem: value])
     }
     
-    func appending(_ params: [String: String?]) -> URL {
+    func appending(_ params: [String: String?]) -> URL? {
         
         guard var urlComponents = URLComponents(string: absoluteString) else { return absoluteURL }
         
@@ -25,6 +25,6 @@ public extension URL {
         urlComponents.queryItems = queryItems
         
         // Returns the url from new url components
-        return urlComponents.url!
+        return urlComponents.url
     }
 }
